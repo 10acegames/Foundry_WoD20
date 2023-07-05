@@ -67,17 +67,19 @@ export async function rollDice(diceRoll) {
 		canBotch = false;
 	}
 
-	roll = new Roll(dice + "d10");
+	roll = new Roll(dice + "d10x10");
 	roll.evaluate({async:true});		
 
 	difficulty = difficulty < 3 ? 3 : difficulty;
 
 	roll.terms[0].results.forEach((dice) => {
-		if ((dice.result == 10) && (speciality)) {
+		/*if ((dice.result == 10) && (speciality)) {
 			success += 2;
 			rolledAnySuccesses = true;
 		}
 		else if (dice.result >= difficulty) {
+		*/
+		if (dice.result >= difficulty) {
 			success++;
 			rolledAnySuccesses = true;
 		}
