@@ -15,6 +15,8 @@
 			"worldversionhint": "Usato per sapere se serve un aggiornamento",
 			"advantagerolls": "Come tirare gli attributi Vantaggio",
 			"advantagerollshint": "Usare i valori permanenti (attivo) o quelli temporanei (disattivo) ad esempio nei tiri di Volontà? Richiede il riavvio di Foundry VTT.",
+			"Specialtyrolls": "How roll Specialty attributes",
+			"Specialtyrollshint": "Do 10s for specialties Explode (check) or count as two successes (not checked)",
 			"therollofone": "Come trattare gli 1 nei tiri",
 			"therollofonehint": "Trattamento da regolamento - tutti gli 1 riducono il numero di successi di uno (attivo), oppure gli 1 non hanno normalmente effetto, a meno che non ci siano 0 successi, causando il fallimento critico (disattivo)?",
 			"attributesettings": "Impostazioni per gli attributi",

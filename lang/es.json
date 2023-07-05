@@ -17,6 +17,8 @@
 			"advantagerollshint": "Usar los valores permanentes (activado) o temporales (desactivado) en tiradas de, p. ej., Fuerza Voluntad. Requiere reiniciar Foundry VTT.",
 			"therollofone": "Como gestionar los ‘1’ en las tiradas",
 			"therollofonehint": "Uso normal de reglas (activado): todos los ‘1’ reducen el número de éxitos en uno. (Desactivado): los ‘1’ no tienen efecto normalmente, pero si no hay éxitos y hay uno o más ‘1’ se considera Fracaso.",
+			"Specialtyrolls": "How roll Specialty attributes",
+			"Specialtyrollshint": "Do 10s for specialties Explode (check) or count as two successes (not checked)",
 			"attributesettings": "Configuracion de los Atributos",
 			"attributesettingshint": "Hay dos opciones: Puedes usar la de edición 20 aniversario, donde tienes Apariencia y Percepción y se calcula Fuerza de Voluntad como estadística (por defecto). O 5ª edicion, cambiando Apariencia y Percepción por Compostura y Resolución y calculando Fuerza de Voluntad con Compostura + Resolución.",
 			"observersactorpermission": "Permisos de visualización para espectadores",

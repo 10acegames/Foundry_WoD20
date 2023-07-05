@@ -15,6 +15,8 @@
 			"worldversionhint": "Wird verwendet, um festzustellen, ob ein World Patch erforderlich ist",
 			"advantagerolls": "Wie sollen Vorteils Attribute gewürfelt werden?",
 			"advantagerollshint": "Sollen Sie die permanenten (geprüften) Werte oder die temporären (nicht geprüften) Werte von z.B. Willenskraft in Würfen verwenden. Erfordert einen Neustart von Foundry VTT.",
+			"Specialtyrolls": "How roll Specialty attributes",
+			"Specialtyrollshint": "Do 10s for specialties Explode (check) or count as two successes (not checked)",
 			"therollofone": "Umgang mit 1en auf Würfeln",
 			"therollofonehint": "Normale Handhabung von Regeln - alle Einsen reduzieren die Anzahl der Erfolge um eins (Check). Einsen hat normalerweise keine Auswirkung, aber wenn keine Erfolge und eine oder mehrere Einsen vorhanden sind, ist das ein Patzer (nicht geprüft)",
 			"attributesettings": "Einstellungen für Attribute",

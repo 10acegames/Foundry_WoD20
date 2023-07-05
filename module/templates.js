@@ -639,6 +639,10 @@ export const registerHandlebarsHelpers = function () {
 			return CONFIG.wod.rollSettings;
 		}
 
+		if (text == "SpecialtyRolls") {
+			return CONFIG.wod.rollSettings;
+		}
+
 		if (text == "theRollofOne") {
 			return CONFIG.wod.handleOnes;
 		}

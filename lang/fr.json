@@ -15,6 +15,8 @@
 			"worldversionhint": "Utilisé pour déterminer si une mise à jour est nécessaire",
 			"advantagerolls": "Déterminer comment jeter les dés pour les attributs Avantages",
 			"advantagerollshint": "Utiliser les valeurs permanentes (coché) ou temporaires (non coché) de par exemple les jets de Volonté. Changer ce paramètre nécessite le redémarrage de Foundry VTT.",
+			"Specialtyrolls": "How roll Specialty attributes",
+			"Specialtyrollshint": "Do 10s for specialties Explode (check) or count as two successes (not checked)",
 			"therollofone": "Déterminer comment les 1 sont traités",
 			"therollofonehint": "Traitement normal selon les règles - tous les 1 réduisent le nombre de succès de 1 (coché). Les 1 n'ont normalement pas d'effet sauf s'il n'y a aucun succès et qu'il y a un ou plusieurs 1 indiquant un botch (non coché)",
 			"attributesettings": "Paramètres pour les Attributs",
