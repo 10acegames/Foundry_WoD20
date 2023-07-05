@@ -57,6 +57,7 @@ export async function rollDice(diceRoll) {
 	let roll;
 	let conditions = "";	
 	let canBotch = true;
+	let explodeStr = '';
 
 	if (await BonusHelper.CheckAttributeAutoBuff(actor, attribute)) {
 		success = await BonusHelper.GetAttributeAutoBuff(actor, attribute);
@@ -67,18 +68,23 @@ export async function rollDice(diceRoll) {
 		canBotch = false;
 	}
 
-	roll = new Roll(dice + "d10x10");
+	//add exploding dice if setting is checked
+	if ((speciality) && (SpecialtyRollsExplode)){
+		explodeStr = 'x10'
+	}
+
+	roll = new Roll(dice + "d10" + explodeStr);
 	roll.evaluate({async:true});		
 
 	difficulty = difficulty < 3 ? 3 : difficulty;
 
 	roll.terms[0].results.forEach((dice) => {
-		/*if ((dice.result == 10) && (speciality)) {
+		if ((dice.result == 10) && (speciality) && (SpecialtyRollsExplode == false)) {
 			success += 2;
 			rolledAnySuccesses = true;
 		}
 		else if (dice.result >= difficulty) {
-		*/
+		
 		if (dice.result >= difficulty) {
 			success++;
 			rolledAnySuccesses = true;

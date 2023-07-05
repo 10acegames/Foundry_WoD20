@@ -40,6 +40,13 @@ Hooks.once("init", async function() {
 		CONFIG.wod.handleOnes = true;
 	}	
 
+	try {
+		CONFIG.wod.SpecialtyRollsExplode = game.settings.get('worldofdarkness', 'SpecialtyRolls');
+	} 
+	catch (e) {
+		CONFIG.wod.SpecialtyRollsExplode = false;
+	}
+
 	CONFIG.wod.observersSeeFullActor = game.settings.get('worldofdarkness', 'observersFullActorViewPermission');
 	CONFIG.wod.limitedSeeFullActor = game.settings.get('worldofdarkness', 'limitedFullActorViewPermission');
 

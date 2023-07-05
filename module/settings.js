@@ -22,6 +22,16 @@ export const systemSettings = function() {
 		type: Boolean,
 	});
 
+    	// Do 10s for specialties Explode (check) or count as two successes (not checked)
+	game.settings.register("worldofdarkness", "SpecialtyRolls", {
+		name: game.i18n.localize('wod.settings.Specialtyrolls'),
+		hint: game.i18n.localize('wod.settings.Specialtyrollshint'),
+		scope: "world",
+		config: false,
+		default: false,
+		type: Boolean,
+	});
+
 	game.settings.register("worldofdarkness", "theRollofOne", {
 		name: game.i18n.localize('wod.settings.therollofone'),
 		hint: game.i18n.localize('wod.settings.therollofonehint'),
@@ -298,7 +308,7 @@ export class Rules extends FormApplication {
         if (hasPermission) {
             for (let s of game.settings.settings.values()) {
                 // Exclude settings the user cannot change
-                if ((s.key == "advantageRolls") || (s.key == "theRollofOne") || (s.key == "attributeSettings")) {
+                if ((s.key == "advantageRolls") || ((s.key == "SpecialtyRolls") || (s.key == "theRollofOne") || (s.key == "attributeSettings")) {
                     // Update setting data
                     const setting = duplicate(s);
 
