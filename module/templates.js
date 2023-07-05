@@ -640,7 +640,7 @@ export const registerHandlebarsHelpers = function () {
 		}
 
 		if (text == "SpecialtyRolls") {
-			return CONFIG.wod.rollSettings;
+			return CONFIG.wod.SpecialtyRollsExplode;
 		}
 
 		if (text == "theRollofOne") {
